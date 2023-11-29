@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="w-[500px] my-4">
           <form
             ref={form}
-            // onSubmit={sendEmail}
+            onClick={sendEmail}
             className="mx-auto grid md:grid-cols-2 space-y-1"
           >
             <label className="">Name</label>

@@ -5,7 +5,7 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
-const Home = () => {
+const Atlhomebuyers = () => {
   return (
     <>
       <NavBar />
@@ -17,4 +17,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Atlhomebuyers

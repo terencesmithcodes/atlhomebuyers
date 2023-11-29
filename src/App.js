@@ -29,7 +29,7 @@
 
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
+import Atlhomebuyers from './pages/Atlhomebuyers'
 import Privacy from './pages/Privacy'
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
     <>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Atlhomebuyers />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </div>
