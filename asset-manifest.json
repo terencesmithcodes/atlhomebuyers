@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/atlhomebuyers/static/css/main.5e56d3ed.css",
+    "main.js": "/atlhomebuyers/static/js/main.6fc1b8b4.js",
+    "static/media/handshake.jpg": "/atlhomebuyers/static/media/handshake.f60033258541868afa19.jpg",
+    "static/media/keys.jpg": "/atlhomebuyers/static/media/keys.a8049ea9cf689cbe6a6e.jpg",
+    "index.html": "/atlhomebuyers/index.html",
+    "main.5e56d3ed.css.map": "/atlhomebuyers/static/css/main.5e56d3ed.css.map",
+    "main.6fc1b8b4.js.map": "/atlhomebuyers/static/js/main.6fc1b8b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e56d3ed.css",
+    "static/js/main.6fc1b8b4.js"
+  ]
+}
