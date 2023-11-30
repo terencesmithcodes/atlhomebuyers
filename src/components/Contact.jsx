@@ -8,21 +8,20 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_mlnpu9a',
-        'template_f15cllv',
-        form.current,
-        '4XMovpdXzHMMyrKjO'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+    emailjs.sendForm(
+      'service_mlnpu9a',
+      'template_f15cllv',
+      form.current,
+      '4XMovpdXzHMMyrKjO'
+    )
+    alert('Successfully Sent!').then(
+      (result) => {
+        console.log(result.text)
+      },
+      (error) => {
+        console.log(error.text)
+      }
+    )
   }
 
   return (
@@ -44,21 +43,24 @@ const Contact = () => {
               type="text"
               name="user_name"
               className="border-2 border-[#C4C5BA] rounded-md w-[200px]"
+              required
             />
             <label>Email</label>
             <input
               type="email"
               name="user_email"
               className="border-2 border-[#C4C5BA] rounded-md w-[200px]"
+              required
             ></input>
             <label>Phone Number</label>
             <input
               type="phone_number"
               name="user_phone"
               className="border-2 border-[#C4C5BA] rounded-md w-[200px]"
+              required
             ></input>
           </form>
-          <input type="checkbox"></input>
+          <input type="checkbox" required></input>
           <p>
             By submitting this form and signing up for texts, you consent to
             receiving marketing text messages from ATL Home Buyers at the number

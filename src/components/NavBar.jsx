@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link as LinkDom } from 'react-router-dom'
 
 const NavBar = () => {
   const [nav, setNav] = useState(false)
@@ -15,14 +16,14 @@ const NavBar = () => {
       </h1>
       <ul className="hidden md:flex">
         <li className="p-4">
-          <Link
-            to="home"
+          <LinkDom
+            to="/"
             smooth={true}
             duration={500}
             className="cursor-pointer"
           >
             Home
-          </Link>
+          </LinkDom>
         </li>
         <li className="p-4">
           <Link
