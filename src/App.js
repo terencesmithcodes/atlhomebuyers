@@ -37,7 +37,7 @@ function App() {
     <>
       <div className="App">
         <Routes>
-          <Route path="/atlcapitalventures.com" element={<Atlhomebuyers />} />
+          <Route path="/" element={<Atlhomebuyers />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </div>
