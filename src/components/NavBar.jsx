@@ -15,7 +15,7 @@ const NavBar = () => {
         ATL Home Buyers
       </h1>
       <ul className="hidden md:flex">
-        <li className="p-4">
+        <li className="p-4 underline decoration-[#595f39] hover:decoration-[#e4e4de]">
           <LinkDom
             to="/"
             smooth={true}
@@ -25,7 +25,7 @@ const NavBar = () => {
             Home
           </LinkDom>
         </li>
-        <li className="p-4">
+        <li className="p-4 underline decoration-[#595f39] hover:decoration-[#e4e4de]">
           <Link
             to="about"
             smooth={true}
@@ -35,7 +35,7 @@ const NavBar = () => {
             About
           </Link>
         </li>
-        <li className="p-4">
+        <li className="p-4 underline decoration-[#595f39] hover:decoration-[#e4e4de]">
           <Link
             to="contact"
             smooth={true}

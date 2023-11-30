@@ -6,7 +6,7 @@ const About = () => {
     <div name="about" className="w-full bg-[#595f39] py-16 px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img
-          className="w-[500px] mx-auto my-4 rounded-2xl"
+          className="w-[500px] mx-auto my-4 rounded-2xl shadow-2xl"
           src={Keys}
           alt="/"
         />
