@@ -50,35 +50,35 @@ const EmailForm = () => {
           alt="/"
         />
         <div className="w-[500px] mx-auto grid md:grid-cols-2 ">
-          <form onSubmit={handleSubmit} className="emailForm ">
+          <form onSubmit={handleSubmit} className="emailForm space-y-3 px-10">
             <input
               type="text"
               placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="border-2 border-[#C4C5BA]rounded-md px-2 w-[200px]"
+              className="border-2 border-[#1B1B1B]rounded-md px-2 py-2 w-[200px]"
               required
             />
             <input
               type="email"
-              placeholder="Email"
+              placeholder="you@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="border-2 border-[#C4C5BA]rounded-md px-2 w-[200px]"
+              className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 w-[200px]"
             />
             <input
               type="phone"
               placeholder="Phone Number"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="border-2 border-[#C4C5BA]rounded-md px-2 w-[200px]"
+              className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 w-[200px]"
             />
             <textarea
               cols="30"
               rows="10"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="border-2 border-[#C4C5BA]rounded-md px-2 w-[400px]"
+              className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 w-[400px]"
             ></textarea>
             <p className="w-[400px]">
               <input type="checkbox" className="mr-1" required></input>
@@ -89,11 +89,11 @@ const EmailForm = () => {
               clicking the unsubscribe link (where available).
             </p>
             <LinkDom to="privacy">
-              <p className="font-bold text-[#1B1B1B] my-3">
+              <p className="font-bold text-[#1B1B1B] my-3 w-[400px] hover:bg-[#C4C5BA]">
                 Read our Privacy Policy &amp; Terms &amp; Conditions
               </p>
             </LinkDom>
-            <button className="bg-[#1B1B1B] w-[100px] h-[50px] rounded-md font-medium text-[#E4E4DE] mx-auto  ">
+            <button className="bg-[#1B1B1B] w-[100px] h-[50px] rounded-md font-medium text-[#E4E4DE] mx-auto">
               Submit
             </button>
           </form>
