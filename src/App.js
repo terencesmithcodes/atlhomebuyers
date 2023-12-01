@@ -31,6 +31,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Atlhomebuyers from './pages/Atlhomebuyers'
 import Privacy from './pages/Privacy'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Atlhomebuyers />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/privacy" element={<Privacy />} />
         </Routes>
       </div>
     </>
