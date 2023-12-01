@@ -63,7 +63,6 @@ const NavBar = () => {
           <li className="p-4 border-b">
             <LinkDom to="/"> Home </LinkDom>
           </li>
-          <li className="p-4 border-b">About</li>
           <li className="p-4 border-b">
             <LinkDom to="/contact">Contact</LinkDom>
           </li>
