@@ -43,63 +43,68 @@ const EmailForm = () => {
   }
 
   return (
-    <div name="contact" className="w-full py-14 px-2 text-[#1B1B1B]">
+    <div
+      name="contact"
+      className="w-full flex flex-wrap text-[#1B1B1B] py-16 px-4"
+    >
       <NavBar />
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+      <div className="max-w-[620px] mx-auto grid md:grid-cols-1">
         <img
           className="w-[500px] mx-auto my-4 rounded-2xl shadow-2xl"
           src={Handshake}
           alt="/"
         />
-        <div className="flex flex-col justify-start">
-          <form onSubmit={handleSubmit} className="emailForm">
-            <input
-              type="text"
-              placeholder="Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="border-2 border-[#1B1B1B]rounded-md px-2 py-2 w-[200px] shadow-2xl"
-              required
-            />
-            <input
-              type="email"
-              placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 w-[200px] shadow-2xl"
-            />
-            <input
-              type="phone"
-              placeholder="Phone Number"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 w-[200px] shadow-2xl"
-            />
-            <textarea
-              cols="30"
-              rows="10"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 w-[400px] shadow-2xl"
-            ></textarea>
-            <p className="w-[400px]">
-              <input type="checkbox" className="mr-1" required></input>
-              By submitting this form and signing up for texts, you consent to
-              receiving marketing text messages from ATL Home Buyers at the
-              number provided. Consent is not a condition of purchase. Msg &amp;
-              data rates may apply. Unsubscribe at any time by replying STOP or
-              clicking the unsubscribe link (where available).
+      </div>
+      <div className="max-w-[620px] grid md:grid-cols-1">
+        <form onSubmit={handleSubmit} className="emailForm">
+          <input
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="border-2 border-[#1B1B1B]rounded-md px-2 py-2 mb-2 w-[300px]  shadow-2xl"
+            required
+          />
+          <input
+            type="email"
+            placeholder="you@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 mb-2 mr-8 w-[300px] shadow-2xl"
+          />
+          <input
+            type="phone"
+            placeholder="Phone Number"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="border-2 border-[#C4C5BA]rounded-md px-2 py-2 mb-2 w-[300px] shadow-2xl"
+          />
+          <textarea
+            cols="28"
+            rows="6
+            "
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="border-2 border-[#C4C5BA]rounded-md  w-[300px] md:w-[400px] shadow-2xl"
+          ></textarea>
+          <p className="max-w-[375px]">
+            <input type="checkbox" className="mr-1" required></input>
+            By submitting this form and signing up for texts, you consent to
+            receiving marketing text messages from ATL Home Buyers at the number
+            provided. Consent is not a condition of purchase. Msg &amp; data
+            rates may apply. Unsubscribe at any time by replying STOP or
+            clicking the unsubscribe link (where available).
+          </p>
+          <LinkDom to="privacy">
+            <p className="font-bold text-[#1B1B1B] my-3 w-[400px] underline decoration-[#595f39] hover:decoration-[#e4e4de]">
+              Read our Privacy Policy &amp; Terms &amp; Conditions
             </p>
-            <LinkDom to="privacy">
-              <p className="font-bold text-[#1B1B1B] my-3 w-[400px] underline decoration-[#595f39] hover:decoration-[#e4e4de]">
-                Read our Privacy Policy &amp; Terms &amp; Conditions
-              </p>
-            </LinkDom>
-            <button className="bg-[#1B1B1B] w-[100px] h-[50px] rounded-md font-medium text-[#E4E4DE] mx-auto shadow hover:shadow-2xl">
-              Submit
-            </button>
-          </form>
-        </div>
+          </LinkDom>
+          <button className="bg-[#1B1B1B] w-[100px] h-[50px] rounded-md font-medium text-[#E4E4DE] mx-auto shadow hover:shadow-2xl">
+            Submit
+          </button>
+        </form>
+        <div className="flex flex-col justify-center w-[500px] mx-auto my-4"></div>
       </div>
     </div>
   )
