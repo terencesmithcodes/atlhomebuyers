@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Handshake from '../assets/handshake.jpg'
 import { Link as LinkDom } from 'react-router-dom'
+import NavBar from '../components/NavBar'
 
 const EmailForm = () => {
   const [name, setName] = useState('')
@@ -43,6 +44,7 @@ const EmailForm = () => {
 
   return (
     <div name="contact" className="w-full py-14 px-2 text-[#1B1B1B]">
+      <NavBar />
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img
           className="w-[500px] mx-auto my-4 rounded-2xl shadow-2xl"

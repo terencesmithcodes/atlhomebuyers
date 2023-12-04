@@ -56,7 +56,7 @@ const NavBar = () => {
             : 'fixed left-[-100%] border-[#1B1B1B]'
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[#1B1B1B] m-4">
+        <h1 className="w-full text-2xl font-bold text-[#1B1B1B] m-4">
           ATL Homebuyers
         </h1>
         <ul className="uppercase p-4">
