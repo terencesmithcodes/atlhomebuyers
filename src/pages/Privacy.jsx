@@ -5,7 +5,7 @@ const Privacy = () => {
   return (
     <div className="max-w-[1240px] w-full h-screen flex flex-col px-4 mx-auto">
       <div>
-        <NavBar className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4" />
+        <NavBar className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-2lg md:text-3xl" />
       </div>
       <h1 className="font-bold">Privacy Policy</h1>
       <p>
