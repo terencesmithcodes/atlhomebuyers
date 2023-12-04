@@ -12,11 +12,11 @@ const Hero = () => {
           Your Trusted Partner in Real Estate Solutions
         </h1>
         <div className="flex justify-center items-center">
-          <p className="text-[#C4C5BA,] md:text-30xl sm:text-2xl text-xl font-light py-4">
+          <p className="text-[#C4C5BA,] md:text-10xl sm:text-lg font-light py-4">
             Fast, flexible financing that's
           </p>
           <Typed
-            className="text-[#C4C5BA,] md:text-30xl sm:text-2xl text-xl font-bold md:pl-2 pl-2"
+            className="text-[#C4C5BA,] md:text-10xl sm:text-lg font-bold md:pl-2 pl-2"
             strings={['Empowering.', 'Confidential.', 'Fair.']}
             typeSpeed={40}
             backSpeed={50}

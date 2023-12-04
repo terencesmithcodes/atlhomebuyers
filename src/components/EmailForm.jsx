@@ -42,15 +42,15 @@ const EmailForm = () => {
   }
 
   return (
-    <div name="contact" className="w-full py-16 px-4 text-[#1B1B1B]">
+    <div name="contact" className="w-full py-14 px-2 text-[#1B1B1B]">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img
-          className="w-[500px] h-[400px] grid place-self-center mx-auto my-4 rounded-2xl shadow-2xl"
+          className="w-[500px] mx-auto my-4 rounded-2xl shadow-2xl"
           src={Handshake}
           alt="/"
         />
-        <div className="w-[500px] grid md:grid-cols-2 ">
-          <form onSubmit={handleSubmit} className="emailForm space-y-3 px-10">
+        <div className="flex flex-col justify-start">
+          <form onSubmit={handleSubmit} className="emailForm">
             <input
               type="text"
               placeholder="Name"

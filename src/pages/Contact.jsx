@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Handshake from '../assets/handshake.jpg'
 import { Link as LinkDom } from 'react-router-dom'
-import NavBar from '../components/NavBar'
 
 const EmailForm = () => {
   const [name, setName] = useState('')
@@ -43,16 +42,15 @@ const EmailForm = () => {
   }
 
   return (
-    <div name="contact" className="w-full py-16 px-4 text-[#1B1B1B]">
-      <NavBar />
+    <div name="contact" className="w-full py-14 px-2 text-[#1B1B1B]">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img
-          className="w-[500px] h-[400px] grid place-self-center mx-auto my-4 rounded-2xl shadow-2xl"
+          className="w-[500px] mx-auto my-4 rounded-2xl shadow-2xl"
           src={Handshake}
           alt="/"
         />
-        <div className="w-[500px] mx-auto grid md:grid-cols-2 ">
-          <form onSubmit={handleSubmit} className="emailForm space-y-3 px-10">
+        <div className="flex flex-col justify-start">
+          <form onSubmit={handleSubmit} className="emailForm">
             <input
               type="text"
               placeholder="Name"
@@ -90,7 +88,7 @@ const EmailForm = () => {
               data rates may apply. Unsubscribe at any time by replying STOP or
               clicking the unsubscribe link (where available).
             </p>
-            <LinkDom to="/contact/privacy">
+            <LinkDom to="privacy">
               <p className="font-bold text-[#1B1B1B] my-3 w-[400px] underline decoration-[#595f39] hover:decoration-[#e4e4de]">
                 Read our Privacy Policy &amp; Terms &amp; Conditions
               </p>
