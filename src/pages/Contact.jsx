@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import Handshake from '../assets/handshake.jpg'
 import { Link as LinkDom } from 'react-router-dom'
-import NavBar from '../components/NavBar'
 
 const EmailForm = () => {
   const [name, setName] = useState('')
@@ -47,7 +46,6 @@ const EmailForm = () => {
       name="contact"
       className="w-full flex flex-wrap text-[#1B1B1B] py-16 px-4"
     >
-      <NavBar />
       <div className="max-w-[620px] mx-auto grid md:grid-cols-1">
         <img
           className="w-[500px] mx-auto my-4 rounded-2xl shadow-2xl"
@@ -87,7 +85,7 @@ const EmailForm = () => {
             onChange={(e) => setMessage(e.target.value)}
             className="border-2 border-[#C4C5BA]rounded-md  w-[300px] md:w-[400px] shadow-2xl"
           ></textarea>
-          <p className="max-w-[375px]">
+          <p className="w-[300px] md:w-[400px]">
             <input type="checkbox" className="mr-1" required></input>
             By submitting this form and signing up for texts, you consent to
             receiving marketing text messages from ATL Home Buyers at the number
@@ -96,7 +94,7 @@ const EmailForm = () => {
             clicking the unsubscribe link (where available).
           </p>
           <LinkDom to="privacy">
-            <p className="font-bold text-[#1B1B1B] my-3 w-[400px] underline decoration-[#595f39] hover:decoration-[#e4e4de]">
+            <p className="font-bold text-[#1B1B1B] my-3 w-[300px] md:w-[400px] underline decoration-[#595f39] hover:decoration-[#e4e4de]">
               Read our Privacy Policy &amp; Terms &amp; Conditions
             </p>
           </LinkDom>
