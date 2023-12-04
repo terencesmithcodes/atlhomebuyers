@@ -14,7 +14,7 @@ const About = () => {
           <p className="text-[#C4C5BA] font-bold uppercase">
             Reliable Real Estate Investment Partner
           </p>
-          <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-[#C4C5BA]">
+          <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-[#1B1B1B]">
             What We Do
           </h1>
           <p className="text-[#C4C5BA]">
