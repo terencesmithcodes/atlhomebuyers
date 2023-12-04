@@ -47,7 +47,9 @@ const EmailForm = () => {
       name="contact"
       className="w-full flex flex-wrap text-[#1B1B1B] py-16 px-4"
     >
-      <NavBar />
+      <div>
+        <NavBar className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4" />
+      </div>
       <div className="max-w-[620px] mx-auto grid md:grid-cols-1">
         <img
           className="w-[500px] mx-auto my-4 rounded-2xl shadow-2xl"

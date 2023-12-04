@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 
 const Privacy = () => {
   return (
-    <div className="max-w-[1240px] w-full h-screen mx-auto flex flex-col ">
+    <div className="max-w-[1240px] w-full h-screen flex flex-col px-4 mx-auto">
       <div>
         <NavBar className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4" />
       </div>
